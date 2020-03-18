@@ -3,10 +3,6 @@ from django.template.defaultfilters import slugify
 from django.contrib.auth.models import User
 from django.contrib.auth.models import AbstractUser
 
-class User(AbstractUser):
-    is_cooker = models.BooleanField('cooker status', default=False)
-    is_diner = models.BooleanField('diner status', default=False)
-
 class Category(models.Model):
     NAME_MAX_LENGTH = 30
     name = models.CharField(max_length=NAME_MAX_LENGTH, unique=True)
