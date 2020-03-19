@@ -28,10 +28,7 @@ SECRET_KEY = '@v9*m_19^%ql1f3d3az4wuj7*2uv9=05i#nt0xwjpvdc7l62ib'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'efra.pythonanywhere.com',
-    '127.0.0.1',
-]
+ALLOWED_HOSTS = []
 
 # Application definition
 
