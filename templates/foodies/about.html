@@ -3,37 +3,31 @@
 {% load static %}
 
 {% block title_block %}
-
-
-
     About Foodies   
 {% endblock %}
 
 {% block body_block %}
+<div class="container"> 
+    <h1 class="mb-5">About Foodies!</h1>
 
-<div class= "aboutStyle">	
-
-	
-
-
-
-<h1>Foodies</h1>
-<font color="Red">
-<font size="+2">
-<p>Welcome food lover</p>
-	   </font> 
-    </font>
-    
-	<font color="black">
- 	<font size="+2">
-    <p>This is the about page</p>
-   	<p>This website has been put together by the foodies team.</p>
-   	<p>It is all about offering home-made food with friendly prices.</p>
-    <p>Visits: {{ visits }}</p>
-    </font> 
-    </font>
-    
+	<div class="row background-image cover about1"> 
+		<div class="col-sm-6">
+			<p class="py-5 my-5">Founded in 2020 by four entrepreneurs, Foodies is a start-up company operating in the United Kingdom. Headquartered in Glasgow, we employ a team of 4 talented employees.</p>
+		</div>
+		<div class="col-sm-6"> 
+			<div class="background-image cover about1"></div>
+		</div>
+	</div>
+	<div class="row background-image cover about2 mt-4	">
+		<div class="col-sm-6 offset-sm-3  mt-4"> 
+			<p class="dark-bg">Foodies aims to be a world leader in online and mobile food ordering, providing customers with an easy way to order food from our individual partners. We use our technology to make food discovery exciting and make home-cooked meals available to everyone. We aim to bring together thousands of customers  with thousands of individual cookers, serving a diverse range of cuisine types, thus creating the world's greatest food community.</p> 
+		</div>	
+	</div>	
 </div>
-
-
+<div class="row bg-danger mt-4"> 
+	<div class="col-sm-12 py-4"> 
+		<h2 class="kaushan text-white text-center">It is all about offering home-made food with friendly prices.</h2>
+	</div>
+</div>
+  
 {% endblock %}

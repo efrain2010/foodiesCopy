@@ -1,0 +1,29 @@
+{% extends 'foodies/user_profile_base.html' %}
+{% load staticfiles %}
+
+{% load crispy_forms_tags %}
+
+{% block title_block %}
+    User reviews
+{% endblock %}
+
+{% block profile_block %}
+	
+	<div class="user_meals_list">
+		<ul class="list-group">
+			{% for row in all_reviews %}
+			<li class="list-group-item">
+				<div class="row w-100 d-flex align-items-center">
+					<div class="col-sm-12">
+						<p class="mb-1"><strong>Title: </strong>{{ row.title }}</p>
+						<p class="mb-1"><strong>Rating: </strong>{{ row.rating }}</p>
+						<p class="mb-1"><strong>Content: </strong>{{ row.content }}</p>
+						<p class="mb-1"><strong>Date: </strong>{{ row.date }}</p>
+					</div>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+{% endblock %}
